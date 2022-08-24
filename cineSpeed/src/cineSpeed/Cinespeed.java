@@ -60,6 +60,7 @@ public class Cinespeed {
 						
 					}
 				}
+				break;
 			}
 		}catch(Exception e) {
 			
@@ -85,18 +86,19 @@ public class Cinespeed {
 						case 1:
 							System.out.println("");
 							System.out.println("      sessão de "+ ses1 +" escolhida");
-							valorPagar( preco);
+							
 							break;
 						case 2:
 							System.out.println("");
 							System.out.println("      sessão de "+ ses2 +" escolhida");
-							valorPagar( preco);
+							
 							break;
 						case 3: 
 							System.out.println("");
 							System.out.println("      sessão de "+ ses3 +" escolhida");
-							valorPagar( preco);
+							
 							break;
+						
 						default:
 							System.out.println("");
 							System.out.println("sessão não identificada, tente novamente...");
@@ -104,6 +106,7 @@ public class Cinespeed {
 							
 						}
 						
+						break;	
 						
 					}
 				}else {
@@ -112,11 +115,10 @@ public class Cinespeed {
 					System.out.println("");
 					continue;
 				}
-				
-				
+				break;
 				
 			}
-			
+			valorPagar( preco);
 			sc.close();
 		}
 	}
